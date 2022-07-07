@@ -1,21 +1,27 @@
-$primary-color: #a28585;
-$border-width: 3px;
-$border-color: #1f0a0a;
-$boder-radius: 20px;
-$box-color: #9f1414;
-$color-text: #fff;
-.container{
+@use "_partial/bodyStyle";
+@use "_partial/btnTop";
+@import "_partial/variables";
+.container {
   font-weight: bold;
   color: $color-text;
   flex-wrap: wrap;
   display: flex;
   background: $primary-color;
+  border-radius: $boder-radius;
   border: $border-width solid $border-color;
-  border-radius: $boder-radius;
-}
-.box{
-  border-radius: $boder-radius;
-  padding: 30px;
-  margin: 5px;
-  background: $box-color;
+
+  .box {
+    border-radius: $boder-radius;
+    padding: 30px;
+    margin: 5px;
+    background: $box-color;
+
+    h5 {
+      padding: 4px;
+      border-radius: $boder-radius;
+      border: 1px solid white;
+      background: rgba(255, 69, 0, 0.47);
+    }
+  }
+
 }
