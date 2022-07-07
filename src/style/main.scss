@@ -1,6 +1,7 @@
 @use "_partial/bodyStyle";
 @use "_partial/btnTop";
 @import "_partial/variables";
+@import "_partial/mixins";
 .container {
   font-weight: bold;
   color: $color-text;
@@ -11,11 +12,7 @@
   border: $border-width solid $border-color;
 
   .box {
-    border-radius: $boder-radius;
-    padding: 30px;
-    margin: 5px;
-    background: $box-color;
-
+    @include themeBox;
     h5 {
       padding: 4px;
       border-radius: $boder-radius;
