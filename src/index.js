@@ -3,6 +3,7 @@ import './style/main.scss';
 
 function component() {
 	const element = document.createElement('h1');
+	element.classList.add('success');
 	element.innerHTML = _.join(['Hello', 'webpack and sass'], ' ');
 	return element;
 }

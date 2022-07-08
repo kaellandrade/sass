@@ -1,0 +1,31 @@
+$success: rgba(20, 150, 20, 0.76);
+%message-shared {
+  text-align: center;
+  padding: 10px;
+  color: #333;
+}
+
+%equal-heights {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  border-color: $success;
+  color: $success;
+}
+
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
+
+.warning {
+  @extend %message-shared;
+  border-color: yellow;
+}

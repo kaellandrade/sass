@@ -1,7 +1,9 @@
 @use "_partial/bodyStyle";
 @use "_partial/btnTop";
+@use "_partial/inheritance";
 @import "_partial/variables";
 @import "_partial/mixins";
+
 .container {
   font-weight: bold;
   color: $color-text;
@@ -12,12 +14,13 @@
   border: $border-width solid $border-color;
 
   .box {
-    @include themeBox;
+    @include themeBox($borderRadius:10px, $pad: 30px, $marg: 10px);
     h5 {
       padding: 4px;
       border-radius: $boder-radius;
       border: 1px solid white;
       background: rgba(255, 69, 0, 0.47);
+      @include themeBox($theme: rgba(255, 69, 0, 0.8),$pad: 10px, $marg: 10px)
     }
   }
 

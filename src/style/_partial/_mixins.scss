@@ -1,6 +1,9 @@
-@mixin themeBox($theme: DarkGray) {
-  border-radius: $boder-radius;
-  padding: 30px;
-  margin: 5px;
-  background: $box-color;
+@mixin themeBox($theme: #0A0707A0, $borderRadius:10px, $pad:0px, $marg:0px) {
+  border-radius: $borderRadius;
+  padding: $pad;
+  margin: $marg;
+  background: $theme;
+  border: 1px solid white;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  justify-content: center;
 }
